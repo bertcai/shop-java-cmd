@@ -5,6 +5,7 @@ public class Goods {
     private String name;
     private float price;
     private int num; //库存
+    private int shopNum = 0;
 
     public Goods() {
         id = -1;
@@ -36,6 +37,10 @@ public class Goods {
         return num;
     }
 
+    public int getShopNum() {
+        return shopNum;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
@@ -50,5 +55,9 @@ public class Goods {
 
     public void setNum(int num) {
         this.num = num;
+    }
+
+    public void setShopNum(int shopNum) {
+        this.shopNum = shopNum;
     }
 }
